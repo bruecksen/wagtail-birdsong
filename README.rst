@@ -42,8 +42,8 @@ Make a new app e.g. ``email``, create a ``models.py`` with a model that extends 
     from birdsong.blocks import DefaultBlocks
     from birdsong.models import Campaign
     from django.db import models
-    from wagtail.admin.edit_handlers import StreamFieldPanel
-    from wagtail.core.fields import StreamField
+    from wagtail.admin.panels import FieldPanel
+    from wagtail.fields import StreamField
 
     class SaleCampaign(Campaign):
         body = StreamField(DefaultBlocks())
